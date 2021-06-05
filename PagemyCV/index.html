@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html, body, p {
+            padding: 0;
+            margin: 0;
+        }
          p, li{
              font-family: 'Courier New', Courier, monospace;
          }
@@ -22,80 +26,121 @@ color: #00fe15;
 .purple{
     background: #663ea3;
 }
+.white-text{
+    color: #FFFFFF;
+}
+.block1{
+    width: 980px;
+    margin: auto;
+}
+.nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav li{
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.exp{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    color: #9F99B1;
+}
+.achievments{
+    list-style-image: url(./img/galochka.png);
+    
+}
+.str-point{
+list-style-image: url(./img/galochka2.png);
+}
     </style>
 </head>
 <body>
     <div>
         <div class="purple">
-            <p><span class="bold-text col-text"> Артем Князев</span></p>
-            <ul> <span class="col-text">
-                <li>Опыт работы</li>
-                <li>Достижения</li>
-                <li>Личное</li>
-                <li>Контакты</li>
-            </span>
-            </ul>
-            <img src="./img/1.jpg" alt="Портрет">
+            <div class="block1">
+                <p><span class="bold-text col-text"> Артем Князев</span></p>
+                <ul class="col-text nav">
+                    <li>Опыт работы</li>
+                    <li>Достижения</li>
+                    <li>Личное</li>
+                    <li>Контакты</li>                
+                </ul>
+                <img src="./img/1.jpg" alt="Портрет">
 
-             <p>Инженер сетей связи. <span class="bold-text">Разработчик ПО</span></p>
+                <p class="white-text">Инженер сетей связи. <span class="bold-text">Разработчик ПО</span></p>
+                <h1 class="white-text">Frontend/Backend Developer</h1>
+            </div>
         </div>
 
         <hr>
-        <h1>Frontend/Backend Developer</h1>
-        <h2>Опыт работы</h2>
-        <ol>
-            <li>
-                АО "Специалист" август 2016 - наст. время
-            </li>
-            <li>
-                ООО "Деловая сеть" 2003-2016
-            </li>
-            <li>
-                ООО "Новойл" 2000-2003
-            </li>
-        </ol>
+            <div class="block1">        
+                <h2>Опыт работы</h2>
+                <ol class="exp">
+                    <li>
+                        <span class="bold-text"> 2016 - наст. время: </span>АО "Специалист" 
+                    </li>
+                    <li>
+                        <span class="bold-text">2003-2016: </span>ООО "Деловая сеть"
+                    </li>
+                    <li>
+                        <span class="bold-text">2000-2003: </span>ООО "Новойл" 
+                    </li>
+                </ol>
+            </div>
+        <hr>
+        <div class="block1">
+                <h2>Мои достижения</h2>
+                <p><b>Главные достижения за последние годы:</b></p>
+                <ul class="achievments">
+                    <li >
+                        Организовал покрытие сетью wi-fi и видеонаблюдением Медицинский университет
+                    </li>
+                    <li>
+                        Выполнил работы по прокладке локальных сетей в аэропорту
+                    </li>
+                    <li>
+                        Установил СКУД в гостинице и школах
+                    </li>
+                </ul>
+        </div>
         
         <hr>
-        <h2>Мои достижения</h2>
-        <p><b>Главные достижения за последние годы:</b></p>
-        <ul>
-            <li>
-                Организовал покрытие сетью wi-fi и видеонаблюдением Медицинский университет
-            </li>
-            <li>
-                Выполнил работы по прокладке локальных сетей в аэропорту
-            </li>
-            <li>
-                Установил СКУД в гостинице и школах
-            </li>
-        </ul>
+        <div class="block1">
+            <h2>Мои сильные стороны</h2>
+            <ul class="str-point">
+                <li>
+                    Внимательный к деталям
+                </li>
+                <li>
+                    Стрессоустойчивый
+                </li>
+                <li>
+                    <i>Целеустремленный</i>
+                </li>
+            </ul>
+        </div>
         
+        <hr>            
+                <p>Just do it!!!</p>            
         <hr>
-        <h2>Мои сильные стороны</h2>
-        <ul>
-            <li>
-                Внимательный к деталям
-            </li>
-            <li>
-                Стрессоустойчивый
-            </li>
-            <li>
-                Целеустремленный
-            </li>
-        </ul>
-        
+        <div class="block1">
+            <h2>Личное</h2>
+            <p>В свободное время играю в теннис, люблю заниматься плаванием и кататься на сноуборде</p>
+            <img src="./img/2.jpg" alt="pickther1">
+            <img src="./img/3.jpg" alt="pickther2">
+            <img src="./img/4.jpg" alt="pickther3">
+        </div>
         <hr>
-        <p>Just do it!!!</p>
-        <hr>
-        <h2>Личное</h2>
-        <p>В свободное время играю в теннис, люблю заниматься плаванием и кататься на сноуборде</p>
-        <img src="./img/2.jpg" alt="pickther1">
-        <img src="./img/3.jpg" alt="pickther2">
-        <img src="./img/4.jpg" alt="pickther3">
-        <hr>
-        <form action="">
-            <input type="text" name="" id="">
-        </form>
+        <div class="block1">
+            <form action="">
+                <input type="text" name="" id="">
+            </form>
+        </div>
         
     </div>
 </body>
