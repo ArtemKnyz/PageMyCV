@@ -49,6 +49,14 @@ color: #00fe15;
     padding: 5px;
     cursor: pointer;
 }
+.nav li a{
+    text-decoration: none;
+    color: #00ecb8;
+
+
+}
+
+
 .exp{
     list-style: none; 
     padding: 0;
@@ -87,18 +95,49 @@ list-style-image: url(./img/galochka2.png);
     border-radius: 50%;
     max-width: 324px;
 }
+#contact-form{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+#contact-form input, #contact-form textarea {
+padding: 20px;
+margin-bottom: 30px;
+font-size: 20px;
+font-weight: bold;
+outline: none;
+border: none;
+border: 3px solid #00ecbb;
+width: 934px;
+
+}
+
+textarea{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100px;
+}
+
+input#submit{
+    width: 350px;
+    cursor: pointer;
+    background: green;
+    color: #6a13eb;
+}
+
+
     </style>
 </head>
 <body>
     <div>
         <div class="purple">
-            <div class="block1">                
+            <div class="block1" id="top">                
                 <ul class="col-text nav">
                     <li><span class="bold-text col-text name-tag"> Артем <br> Князев</span></li>
-                    <li>Опыт работы</li>
-                    <li>Достижения</li>
-                    <li>Личное</li>
-                    <li>Контакты</li>                
+                    <li><a href="#experience">Опыт работы</a></li>
+                    <li><a href="#achievments">Достижения</a></li>
+                    <li><a href="#strong">Личное</a></li>
+                    <li><a href="#deviz">Мои увлечения</a></li>                
+                    <li><a href="#contact">Контакты</a></li>                
                 </ul>
                 <img class="logo-img" src="./img/1.jpg" alt="Портрет">
 
@@ -107,7 +146,7 @@ list-style-image: url(./img/galochka2.png);
             </div>
         </div>
         
-            <div class="block1">        
+            <div class="block1" id="experience">        
                 <h2>Опыт работы</h2>
                 <ol class="exp">
                     <li>
@@ -122,7 +161,7 @@ list-style-image: url(./img/galochka2.png);
                 </ol>
             </div>
         
-        <div class="block1">
+        <div class="block1" id="achievments">
                 <h2>Мои достижения</h2>
                 <p><b>Главные достижения за последние годы:</b></p>
                 <ul class="achievments">
@@ -138,7 +177,7 @@ list-style-image: url(./img/galochka2.png);
                 </ul>
         </div>        
         
-        <div class="block1">
+        <div class="block1" id="strong">
             <h2>Мои сильные стороны</h2>
             <ul class="str-point">
                 <li>
@@ -156,7 +195,7 @@ list-style-image: url(./img/galochka2.png);
                    
                 <h2 class="hands-bg white-text">Just do it!!!</h2>            
         
-        <div class="block1">
+        <div class="block1" id="deviz">
             <h2>Мои увлечения</h2>
             <p class="paragrath">В свободное время играю в теннис, люблю заниматься плаванием и кататься на сноуборде</p>
             <img class="circle-img" src="./img/2.jpg" alt="pickther1">
@@ -164,11 +203,18 @@ list-style-image: url(./img/galochka2.png);
             <img class="circle-img" src="./img/4.jpg" alt="pickther3">
         </div>
         
-        <div class="block1">
-            <form action="">
-                <input type="text" name="" id="">
+        <div class="block1" id="contact">
+            <h2>Контакт</h2>
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="F10" placeholder="ФИО" id="">
+                <input type="email" name="email" placeholder="E-mail" id="">
+                <textarea name="message" placeholder="Сообщение"></textarea>
+                <input type="submit" value="Отправить" id="submit">
             </form>
+            <a href="#top">Go to top</a>
         </div>
+
+        
         
     </div>
 </body>
