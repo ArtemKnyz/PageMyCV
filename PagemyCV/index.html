@@ -67,13 +67,33 @@ color: #00fe15;
 .exp li{
     margin: 10px 0;
 }
-.achievments{
-    list-style-image: url(./img/galochka.png);
-    
+.achievments{    
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;    
 }
+
+.achievments li{
+background: url("./img/galochka.png") no-repeat left center;
+padding-left: 70px;
+margin: 20px 0;
+}
+
 .str-point{
-list-style-image: url(./img/galochka2.png);
+list-style: none;
+    padding: 0;
+    margin: 20px 0;  
+    column-count: 2; 
 }
+.str-point li{
+    background: url("./img/galochka2.png") no-repeat left center;
+padding-left: 70px;
+margin: 30px 0;
+margin-top: 0;
+padding-top: 18px;
+padding-bottom: 18px;
+}
+
 .logo-img{
     width: 980px;
 }
@@ -86,7 +106,7 @@ list-style-image: url(./img/galochka2.png);
     line-height: 30px;
 }
 .hands-bg{
-    background-image: url(./img/futuristic.jpg);
+    background-image: url("./img/futuristic.jpg");
     background-position: center;
     background-size: cover;
     padding: 40px 20px;
@@ -123,6 +143,43 @@ input#submit{
     background: green;
     color: #6a13eb;
 }
+#gotop{
+    text-decoration: none;
+    display: inline-block;
+    height: 69px;
+    width: 69px;
+    background: green;
+    color: #6a13eb;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    bottom: 69px;
+    right: 69px;
+}
+
+.logo-container{
+    width: 970px;
+    height: 547px;
+
+    background-image: url("img/1.jpg");
+    background-size: cover;
+
+    box-shadow: 0px -100px 50px 0px rgba(0,0,0,0.8) inset;
+
+}
+.text-overlap{
+position: relative;
+padding: 0 60px;
+top: -65px;
+margin: 0;
+
+}
+H1{
+    font-size: 40px;
+    margin-top: 0;
+}
+
 
 
     </style>
@@ -139,9 +196,10 @@ input#submit{
                     <li><a href="#deviz">Мои увлечения</a></li>                
                     <li><a href="#contact">Контакты</a></li>                
                 </ul>
-                <img class="logo-img" src="./img/1.jpg" alt="Портрет">
+                <!-- <img class="logo-img" src="./img/1.jpg" alt="Портрет">-->
+                <div class="logo-container"></div>
 
-                <p class="white-text paragrath">Инженер сетей связи. <span class="bold-text">Разработчик ПО</span></p>
+                <p class="white-text paragrath text-overlap">Инженер сетей связи. <span class="bold-text">Разработчик ПО</span></p>
                 <h1 class="white-text">Frontend/Backend Developer</h1>
             </div>
         </div>
@@ -189,6 +247,21 @@ input#submit{
                 <li>
                     <i>Целеустремленный</i>
                 </li>
+                <li>
+                    <i>Коммуникабельный</i>
+                </li>
+                <li>
+                    <i>Умею работать в команде</i>
+                </li>
+                <li>
+                    <i>Управленческие навыки</i>
+                </li>
+                <li>
+                    <i>Легко обучаюсь</i>
+                </li>
+                <li>
+                    <i>Знания английского - upperintermediate</i>
+                </li>
             </ul>
         </div>
         
@@ -211,7 +284,7 @@ input#submit{
                 <textarea name="message" placeholder="Сообщение"></textarea>
                 <input type="submit" value="Отправить" id="submit">
             </form>
-            <a href="#top">Go to top</a>
+            <a id="gotop" href="#top">&and;</a>
         </div>
 
         
